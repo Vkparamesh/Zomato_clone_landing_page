@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family:Courier New, Courier, 'monospace';
+    
+}
+
+.hero--section{
+    background: url(images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    
+    
+}
+
+.hero--section--nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+    padding:16px 48px;
+
+}
+.hero--section--app,.nav--group {
+    text-decoration: none;
+}
+
+.hero--section--nav--group{
+    display: flex;
+    gap: 30px;
+}
+
+.hero--section--body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    min-height: calc(60vh-60px);
+    gap:32px;
+}
+
+.zomato--logo{
+    height: 75px; 
+}
+
+.hero--section--body--search{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 60%;
+    height: 50px;
+    border-radius:40px; 
+    padding-left:20px;
+    gap:5%;
+}
+
+
+.hero--section--body--element{
+    display: flex;
+    width:100%;
+    outline: none;
+    border: none;  
+    
+}
+#place{
+    border-right: 2PX solid grey;
+    width: 40%;
+}
+
+@media only screen and (max-width:600px) {
+
+    
+    
+}
