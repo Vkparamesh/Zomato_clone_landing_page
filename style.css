@@ -17,6 +17,7 @@
 .hero--section--body h1{
     text-align: center;
     color: white;
+    font-weight: 400;
 
 }
 
@@ -96,6 +97,22 @@
     .zomato--logo{
         height: 50px;
     }
+    .hero--section--body--search{
+        flex-direction: column;
+        background-color: transparent;
+        width: 80%;
+        padding: 20PX;
+        gap: 10px;
+    }
+    .hero--section--body--element{
+        padding: 15px;
+        border-radius: 10px;
+        width: 95%;
+    }
+    #place{
+        border-right: 2PX solid grey;
+        width:95%;
+    }
 }
 
 
@@ -156,6 +173,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .display--text a {
     color: rgb(239, 79, 95);
@@ -262,6 +280,7 @@ transition: all 0.3s ease;
     justify-content:center;
     flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
   
 }
 
@@ -290,6 +309,7 @@ transition: all 0.3s ease;
 }
 .content--icon img{
     height:50px;
+    cursor: pointer;
 }
 .radio--button label{
     font-size: 1rem;
@@ -312,6 +332,7 @@ transition: all 0.3s ease;
     color:white;
     background-color:rgb(239, 79, 95);
     padding: 5px;
+    cursor: pointer;
 }
 
 
@@ -362,6 +383,7 @@ transition: all 0.3s ease;
     padding: 15px;
     border-radius: 10px;
     outline: 1px gray solid;
+    cursor: pointer;
 }
 .location--places--area h1{
     font-weight: 400;
@@ -391,7 +413,7 @@ transition: all 0.3s ease;
 
 .exolore--container{
     margin: 10px auto;
-    width: 90%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -410,4 +432,119 @@ transition: all 0.3s ease;
     font-weight: 300;
     padding: 15px;
     border-radius:5px;
+}
+
+.end--section{
+    background-color: whitesmoke;
+}
+
+.footer{
+    margin:10px auto;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer--title{
+    height: 50px;
+    width: 100%;
+    padding:20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.footer--title img{
+    height: 40px;
+}
+.footer--title--icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.footer--title--icon button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0.5px solid gray;
+    height:40px;
+    width:100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding:10px;
+
+}
+.footer--title--icon img{
+    width:17px;
+    height: auto;
+
+}
+.footer--title--icon i{
+    padding: 5px;
+}
+
+.container--titel{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    flex-wrap: wrap;
+   
+}
+.footer--title--content{
+    display: flex;
+    align-items:left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer--title--content h1{
+    font-size: 1rem;
+    font-weight:600;
+}
+.footer--title--content h2{
+    font-size: 1rem;
+    font-weight:400;
+    color: gray;
+    cursor: pointer;
+}
+.social--link{
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.footer--title--content img{
+    height:30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer{
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h4{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    
 }
