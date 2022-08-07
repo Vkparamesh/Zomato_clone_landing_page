@@ -440,7 +440,7 @@ transition: all 0.3s ease;
 
 .footer{
     margin:10px auto;
-    width:80%;
+    width:90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,6 +448,7 @@ transition: all 0.3s ease;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .footer--title{
     height: 50px;
     width: 100%;
@@ -481,7 +482,7 @@ transition: all 0.3s ease;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    padding:10px;
+    padding:20px;
 
 }
 .footer--title--icon img{
