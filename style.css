@@ -1,8 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    color: white;
-    font-family:Courier New, Courier, 'monospace';
+    font-family: "Poppins", sans-serif;
     
 }
 
@@ -15,6 +14,17 @@
     
 }
 
+.hero--section--body h1{
+    text-align: center;
+    color: white;
+
+}
+
+.hero--section--nav--group i{
+    font-size: 20px;
+    color: white;
+}
+
 .hero--section--nav{
     display: flex;
     align-items: center;
@@ -25,6 +35,7 @@
 }
 .hero--section--app,.nav--group {
     text-decoration: none;
+    color: white;
 }
 
 .hero--section--nav--group{
@@ -43,6 +54,7 @@
 
 .zomato--logo{
     height: 75px; 
+    flex-wrap: wrap;
 }
 
 .hero--section--body--search{
@@ -57,6 +69,9 @@
     gap:5%;
 }
 
+.hero--section--nav--group i {
+    display: none;
+}
 
 .hero--section--body--element{
     display: flex;
@@ -72,6 +87,239 @@
 
 @media only screen and (max-width:600px) {
 
+    .hero--section--nav--group a{
+        display: none;
+    }
+    .hero--section--nav--group i {
+        display: flex;
+    }
+    .zomato--logo{
+        height: 50px;
+    }
+}
+
+
+.container--card{
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap:wrap;
+
+}
+
+.card--box{
+    height:290px ;
+    width: 250px;
+    border-radius: 10px;
+    outline: gray solid 1px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    
+}
+.card--box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgb(0,0,0,0.19);
     
     
+}
+.card--box img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card--box--text{
+ padding: 5px;
+    
+}
+
+.card--box--text h2{
+    font-weight: 400;
+    
+}
+.card--box--text p {
+    font-size: small;
+    font-weight:l200;
+}
+
+.container--display{
+    
+    margin: 20px auto;
+    width: 90%;  
+    flex-wrap: wrap;
+}
+.display--text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display--text a {
+    color: rgb(239, 79, 95);
+    text-decoration: none;
+}
+.display--card--holder{
+    margin: 10px auto;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.display--card {
+width: 200px;
+height: 300px;
+border-radius: 10px;
+border: 1px solid gray;
+overflow: hidden;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+transition: all 0.3s ease;
+}
+
+.display--card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgb(0,0,0,0.19);
+}
+
+
+.image1{
+    background: url(images/collection1.jpg);
+}
+.image2{
+    background: url(images/collection2.jpg);
+}
+.image3{
+    background: url(images/collection3.jpg);
+}
+.image4{
+    background: url(images/collection4.jpg);
+}
+.image1 ,.image2.image3.image4{
+    background-size:cover;
+    background-position: center;
+}
+.display--card h2{
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    color:white;
+    font-size:medium;
+    font-weight: 400;
+    padding-bottom:20px;
+    padding-left: 5px;
+}
+
+.display--card p{
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    color:white;
+    font-size:small;
+    font-weight: 200;
+    padding-bottom:5px;
+    padding-left: 5px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.842)0%,
+        rgba(0, 0, 0, 0.100)50%,
+        rgba(0, 0, 0, 0)75%,
+        rgba(0, 0, 0, 0)100%
+    );
+}
+.container--promotion{
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.promotion--image img{
+    height: 350px;
+    padding: 20px;
+}
+
+.promotion--content{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+.promotion--content h1{
+    font-weight: 400;
+    font-size: 2rem;
+    
+}
+
+.promotion--content p {
+    font-weight:500;
+    font-size:13px;
+    
+}
+
+.promotion--content h4{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: grey;
+}
+.content--icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.content--icon img{
+    height:50px;
+}
+.radio--button label{
+    font-size: 1rem;
+    font-weight:300;
+    padding: 5px;
+}
+.content--email--box{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.content--email--box button{
+    border-radius: 5px;
+    border: none;
+    height:50px;
+    width: 30%;
+    color:white;
+    background-color:rgb(239, 79, 95);
+    padding: 5px;
+}
+
+
+.content--email--box input{
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width:70%;
+    padding-left:20px;
+    outline: gray 1px solid;
 }
